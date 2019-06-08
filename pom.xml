@@ -19,7 +19,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.garrettestrin.helloworld</mainClass>
+                            <mainClass>com.garrettestrin.helloworld.app.HelloWorldApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
