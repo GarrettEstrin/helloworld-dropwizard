@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Ddw.server.connector.port=$PORT -jar target/hello-world-1.0-SNAPSHOT.jar server src/main/resources/hello-world.yml
+web: java $JAVA_OPTS -Ddw.server.connector.port=$PORT -jar target/helloworld-1.0-SNAPSHOT.jar server src/main/resources/hello-world.yml
