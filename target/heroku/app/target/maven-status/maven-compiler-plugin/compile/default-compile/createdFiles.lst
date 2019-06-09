@@ -1,0 +1,8 @@
+com/garrettestrin/helloworld/health/TemplateHealthCheck.class
+com/garrettestrin/helloworld/api/Clap.class
+com/garrettestrin/helloworld/resources/ClapResource.class
+com/garrettestrin/helloworld/api/Clap$ClapBuilder.class
+com/garrettestrin/helloworld/api/Saying.class
+com/garrettestrin/helloworld/app/HelloWorldConfiguration.class
+com/garrettestrin/helloworld/resources/HelloWorldResource.class
+com/garrettestrin/helloworld/app/HelloWorldApplication.class
