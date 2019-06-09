@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Ddw.server.connector.port=$PORT -jar target/helloworld-1.0-SNAPSHOT.jar server src/main/resources/hello-world.yml
+web: java $JAVA_OPTS -Ddw.server.applicationConnectors[0].port=$PORT -cp target/classes:target/dependency/* com.garrettestrin.helloworld.app.HelloWorldApplication server target/classes/hello-world.yml
