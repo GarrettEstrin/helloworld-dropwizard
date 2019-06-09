@@ -53,5 +53,16 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>helloworld-dropwizard</id>
+            <url>packagecloud+https://packagecloud.io/exampleCorp/core</url>
+        </repository>
+        <snapshotRepository>
+            <id>helloworld-dropwizard</id>
+            <url>packagecloud+https://packagecloud.io/exampleCorp/core</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
 </project>

@@ -2,6 +2,7 @@ package com.garrettestrin.helloworld.resources;
 
 import com.codahale.metrics.annotation.Timed;
 import com.garrettestrin.helloworld.api.Clap;
+import com.garrettestrin.helloworld.app.ClapService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -12,14 +13,17 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 public class ClapResource {
 
-    public ClapResource() {
+    private final ClapService clapService;
 
+    public ClapResource(ClapService clapSrvc) {
+        clapService = clapSrvc;
     }
 
     @GET
     @Timed
     @Path("/{message}")
     public Clap clapify(@PathParam("message") String message) {
-        return new Clap(message);
+        Clap clap = clapService.clappify(message);
+        return clap;
     }
 }

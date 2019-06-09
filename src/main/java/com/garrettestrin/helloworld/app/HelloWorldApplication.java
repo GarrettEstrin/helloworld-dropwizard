@@ -33,7 +33,8 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         environment.jersey().register(resource);
 
         // Clap Resource
-        final ClapResource clapResource = new ClapResource();
+        ClapService clapService = new ClapService();
+        final ClapResource clapResource = new ClapResource(clapService);
         environment.jersey().register(clapResource);
         final TemplateHealthCheck healthCheck =
                 new TemplateHealthCheck(configuration.getTemplate());
